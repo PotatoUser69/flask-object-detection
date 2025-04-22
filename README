@@ -19,13 +19,13 @@ Clone the repository to your local machine:
 ```bash
 git clone https://github.com/yourusername/flask-object-detection.git
 cd flask-object-detection
-
+```
 ### Step 2: Build and Run the Application
 Make sure you're in the `flask-app` folder of the project, and run the following Docker Compose command to build and start the app:
 
 ```bash
 docker-compose up --build -d
-
+```
 This will:
 
 - Build the Docker image for the Flask app.
@@ -36,14 +36,14 @@ Once the app is up and running, you can access it in your web browser at:
 
 ```bash
 http://localhost:5000
-
+```
 
 This should be exactly what you're looking for. Let me know if you'd like to add anything else!
 
 ### Application Workflow
 
 #### 1. Upload Image:
-- Select an image (JPG/PNG) from your local machine.
+- Select an image (JPG/JPEG/PNG) from your local machine.
 - The app will display the image and allow you to upload it for processing.
 
 #### 2. Inference and Result Display:
@@ -56,34 +56,6 @@ This should be exactly what you're looking for. Let me know if you'd like to add
   - Average FPS.
   - Average confidence score per class.
 - Metrics are shown both as a bar chart and summarized per detected class.
-
-### Folder Structure
-
-flask-object-detection/
-├── docker-compose.yml
-├── saved_model/
-├── app/
-├───├──Dockerfile
-│   ├── data/
-│   │   ├── label_map.pbtxt
-│   ├── uploads/
-│   ├── originals/
-│   ├── protos/
-│   ├── core/
-│   ├── utils/
-│   ├── templates/
-│   │   ├── index.html
-│   │   ├── results.html
-│   │   └── metrics.html
-│   ├── static/
-│   │   ├── css/
-│   │   ├── script.js
-│   ├── inference.py
-│   ├── routes.py
-│   ├── requirements.txt
-│   ├── metrics.csv
-│   └── app.py
-└── .gitignore
 
 ### Directories:
 
