@@ -17,11 +17,11 @@ Before running the app, ensure you have **Docker** and **Docker Compose** instal
 ### Step 1: Clone the repository
 Clone the repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/flask-object-detection.git
+git clone https://github.com/PotatoUser69/flask-object-detection.git
 cd flask-object-detection
 ```
 ### Step 2: Build and Run the Application
-Make sure you're in the `flask-app` folder of the project, and run the following Docker Compose command to build and start the app:
+Make sure to change directory in the `flask-app` folder of the project, and run the following Docker Compose command to build and start the app:
 
 ```bash
 docker-compose up --build -d
@@ -37,8 +37,6 @@ Once the app is up and running, you can access it in your web browser at:
 ```bash
 http://localhost:5000
 ```
-
-This should be exactly what you're looking for. Let me know if you'd like to add anything else!
 
 ### Application Workflow
 
@@ -95,6 +93,3 @@ If you prefer to run the app without Docker, follow these steps:
 3. Access the app in your browser at:
    ```bash
     http://localhost:5000
-
-
-Now you can copy the full section with the updated information! Let me know if you'd like further adjustments.
